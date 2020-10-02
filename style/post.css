@@ -39,7 +39,7 @@ form {
   height: 100%;
   font-size: 2.5rem;
   width: 100%;
-  max-width: 75vw;
+  max-width: 55vw;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -80,7 +80,7 @@ form button {
 
 article {
   width: 100%;
-  max-width: 75vw;
+  max-width: 55vw;
   padding: 2rem;
   margin: 0 auto 1.2rem auto;
   border-radius: 5px;
