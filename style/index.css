@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #e9ebea;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+}
+
+header a {
+  width: 50%;
+  text-decoration: none;
+  color: #e9ebea;
+  font-size: 1.8rem;
+}
+
+#active {
+  pointer-events: none;
+}
+
+header a + a {
+  border-left: 4px dotted #e9ebea;
+}
+
+main {
+  width: 100%;
+  height: 94%;
+
+  display: flex;
+}
+
+article {
+  width: 70vw;
+  background-color: #e9ebea;
+}
+
+article img {
+  width: 100px;
+  display: block;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+article img:hover {
+  padding: 2px;
+}
+
+article img + img {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+article img + img + img {
+  width: 120px;
+  margin-top: 40px;
+  margin-left: 290px;
+}
+
+article p {
+  position: absolute;
+  max-width: 25%;
+  font-size: 1.1rem;
+  top: 42%;
+  left: 31%;
+  bottom: 58%;
+}
+
+[data-info] {
+  position: relative;
+  font-weight: bold;
+}
+
+[data-info]:after {
+  display: none;
+  position: absolute;
+  top: -25px;
+  padding: 3px;
+  border-radius: 3px;
+  left: 2px;
+  content: attr(data-info);
+  white-space: nowrap;
+  background-color: black;
+  color: White;
+}
+
+[data-info]:hover:after {
+  display: block;
+}
+
+aside {
+  width: 30vw;
+  background-color: #9f9f9f;
+  text-align: center;
+}
+
+#contact img {
+  width: 30px;
+  margin-top: 5rem;
+  border-radius: 0;
+}
+
+aside img {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+aside a img {
+  width: 30px;
+}
+
+aside h1 {
+  font-size: 1.8rem;
+}
+
+aside p {
+  font-size: .9em;
+  padding: 3px;
+}
+
+@media (max-width: 1260px){
+  article img {
+    margin-top: 0;
+    display: inline;
+    margin-left: 15%;
+  }
+
+  article img + img {
+    margin-top: 0;
+    margin-left: 15%;
+  }
+  
+  article img + img + img {
+    width: 120px;
+    margin-top: 10px;
+    margin-left: 15%;
+  }
+
+  article p {
+    position: absolute;
+    max-width: 25%;
+    font-size: 1.1rem;
+    top: 31%;
+    left: 25%;
+    bottom: 69%;
+  }
+  
+  article ul {
+    position: absolute;
+    max-width: 30%;
+    font-size: 1.1rem;
+    top: 51%;
+    left: 25%;
+    bottom: 49%;
+  }
+
+  aside img {
+    margin-top: 2%;
+  }
+}

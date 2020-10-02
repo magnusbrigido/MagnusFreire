@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/post.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <header>
+      <a href="index.html">Perfil</a>
+      <a id="active" href="#">Post</a>
+    </header>
+    <div>
+      <form>
+        <div>
+          <label for="titulo">Título</label>
+          <input type="text" id="titulo" required>
+        </div>
+        <div>
+          <label for="conteudo">Conteúdo</label>
+          <textarea type="text" id="conteudo" required></textarea>
+        </div>
+        <button onclick="handleSubmit(event)">Postar</button>
+      </form>
+      <main id="content">
+      </main>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>

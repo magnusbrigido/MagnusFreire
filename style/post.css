@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #e9ebea;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+}
+
+header a {
+  width: 50%;
+  text-decoration: none;
+  color: #e9ebea;
+  font-size: 1.8rem;
+}
+
+#active {
+  pointer-events: none;
+}
+
+header a + a {
+  border-left: 4px dotted #e9ebea;
+}
+
+form {
+  height: 100%;
+  font-size: 2.5rem;
+  width: 100%;
+  max-width: 75vw;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+form label {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+form input,
+form textarea {
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 5px;
+  font-size: 20px;
+  width: 100%;
+  height: 1.5rem;
+}
+
+form textarea {
+  resize: none;
+  height: 6rem;
+}
+
+form button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .9rem;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: black;
+  color: #e9ebea;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+article {
+  width: 100%;
+  max-width: 75vw;
+  padding: 2rem;
+  margin: 0 auto 1.2rem auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+  word-wrap: break-word;
+  
+}
+
+article h3 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+article span {
+  font-size: 0.7rem;
+}
+
+article p {
+  font-size: 1.3rem;
+}
+
+article button {
+  width: 25px;
+  height: 25px;
+  font-size: 0.7rem;
+  background-color: black;
+  color: #e9ebea;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  float: right;
+}
