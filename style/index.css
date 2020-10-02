@@ -72,10 +72,10 @@ article img + img + img {
 article p {
   position: absolute;
   max-width: 25%;
-  font-size: 1.1rem;
-  top: 42%;
+  font-size: 1.2rem;
+  top: 41%;
   left: 31%;
-  bottom: 58%;
+  bottom: 59%;
 }
 
 [data-info] {
